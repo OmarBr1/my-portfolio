@@ -12,14 +12,14 @@ const Portfolio = () => {
             <div className="card-body">
               <h5 className='card-title'>Portfolio Page</h5>
               <p className="card-text">An example of a personnal Portfolio Page project to help showcase your feild experience.</p>
-              <Link to="/comingSoon">
-              <button className="cta-button">Look At Me!</button>
-            </Link>
+              <a href="https://omarbr1.github.io/Portfolio/" target="_blank" rel="noopener noreferrer">
+                <button className="cta-button">Look At Me!</button>
+              </a>
             </div>
           </div>
 
           <div className="project-card">
-            <img src="https://picsum.photos/400/300" alt="Project name" />
+            <img src="lazy-img.png" alt="E-Comerce Page" />
             <div className="card-body">
               <h5 className='card-title'>E-Comerce Page</h5>
               <p className="card-text">An e-commerce page example, build it with React and Redux.</p>
@@ -31,9 +31,9 @@ const Portfolio = () => {
         </div>
         <div className="row">
           <div className="project-card">
-            <img src="https://picsum.photos/400/300" alt="Project name" />
+            <img src="lazy-img.png" alt="Restaurent Menu Page" />
             <div className="card-body">
-              <h5 className='card-title'>Restaurent Menu Page</h5>
+              <h5 className='card-title'> Restaurent Menu Page</h5>
               <p className="card-text">A basic restaurent menu page with modern styles.</p>
               <Link to="/comingSoon">
               <button className="cta-button">Look At Me!</button>
@@ -42,7 +42,7 @@ const Portfolio = () => {
           </div>
 
           <div className="project-card">
-            <img src="https://picsum.photos/400/300" alt="Project name" />
+            <img src="lazy-img.png" alt="Weather App Page" />
             <div className="card-body">
               <h5 className='card-title'>A Weather App Page</h5>
               <p className="card-text">A simple weather webapp by integrating an API.</p>

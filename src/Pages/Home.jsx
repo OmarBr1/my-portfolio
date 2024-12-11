@@ -8,7 +8,7 @@ const Home = () => {
       <header className="hero">
         <div className="hero-content">
           <div className="hero-image">
-            <img src="/hero-img.png" alt="Hero Image" /> {/* Replace with your photo path */}
+            <img src="hero-img.png" alt="Hero Image" /> {/* Replace with your photo path */}
           </div>
           <div className="hero-text">
             <h1>Welcome to My Personal Website</h1>
