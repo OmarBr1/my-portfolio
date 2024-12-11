@@ -1,0 +1,174 @@
+/* Resume.css */
+
+#Resume {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.resume-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+.resume-section {
+  margin-bottom: 2rem;
+}
+
+.resume-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #555;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  animation: appearFromLeft 1s ease-in-out;
+}
+
+.resume-item {
+  margin-bottom: 1.5rem;
+}
+
+.resume-item h4 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  animation: appearFromRight 1s ease-in-out;
+}
+
+.resume-item p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-list li {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  display: inline-block;
+  animation: appearFromLeft 1s ease-in-out;
+}
+
+
+/* Progress Bar Styles */
+.skills-progress {
+  margin-top: 20px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  background-color: #e0e0e0; /* Light gray for the background */
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progress {
+  background-color: #007bff; /* Blue for the progress */
+  height: 100%;
+  transition: width 0.4s ease;
+  border-radius: 10px;
+}
+
+/* Other Skills Section */
+.skills-list {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 1rem;
+  }
+
+  .resume-container h2 {
+    font-size: 2rem;
+  }
+
+  .resume-section h3 {
+    font-size: 1.5rem;
+  }
+
+  .resume-item h4 {
+    font-size: 1.3rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes appearFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appearFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .skill span {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    height: 8px;
+  }
+}

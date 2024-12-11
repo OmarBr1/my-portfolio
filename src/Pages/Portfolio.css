@@ -1,0 +1,240 @@
+/* Portfolio Container */
+#Portfolio {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #ffefd6d3;
+  margin-left: 20px;
+}
+
+/* Projects Container */
+.projects-cnt {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Section Title */
+.projects-cnt h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Row Style */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap; 
+}
+
+/* Card Styles */
+.project-card {
+  width: 48%;
+  border: 2px solid rgb(53, 65, 65);
+  padding: 20px;
+  color: #fefefec5;
+  background-color: #403a31;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  opacity: 0;
+  animation: fadeInUp 1.5s forwards;
+  animation-delay: 1.2s;
+  margin-bottom: 1.5rem;
+}
+
+/* Image Styles */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover img {
+  opacity: 0.8;
+}
+
+/* Card Body */
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #94821cc4;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: #bae3fcb5;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Link */
+.btn-link {
+  color: #007bff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Card Hover Effect */
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: #50403d; /* Slightly darken the background on hover */
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+/* Responsive Design for 1024px to 1440px (Large Laptops and Desktops) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  /* Card Styles */
+  .project-card {
+    width: 85%; /* Adjust width for large screens, allowing 2 cards per row */
+    margin-bottom: 2rem; /* Add space between cards */
+  }
+
+  /* Section Title */
+  .projects-cnt h3 {
+    font-size: 2.2rem; /* Slightly smaller for large screens */
+    margin-bottom: 3rem; /* More space below title */
+  }
+
+  /* Row Style */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Keep gap consistent */
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1440px)  {
+  /* Card Styles */
+  .project-card {
+    width: 45%; /* Two cards per row, with a small gap */
+    margin-bottom: 2rem; /* Add space between cards */
+  }
+
+  /* Section Title */
+  .projects-cnt h3 {
+    font-size: 2.2rem; /* Slightly smaller for medium-large screens */
+    margin-bottom: 3rem; /* More space below title */
+  }
+
+  /* Row Style */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Space between the cards */
+    flex-wrap: wrap;
+  }
+}
+
+/* Responsive Design for 1024px to 1308px (Medium to Large Screens) */
+@media (min-width: 1024px) and (max-width: 1308px) {
+  /* Card Styles */
+  .project-card {
+    width: 95%; /* Two cards per row, with a small gap */
+    margin-bottom: 2rem; /* Add space between cards */
+  }
+
+  /* Section Title */
+  .projects-cnt h3 {
+    font-size: 2.2rem; /* Slightly smaller for medium-large screens */
+    margin-bottom: 3rem; /* More space below title */
+  }
+
+  /* Row Style */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Space between the cards */
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Responsive Design for 1024px */
+@media (max-width: 1024px) {
+  .project-card {
+    width: 90%; 
+    margin-bottom: 1rem;
+  }
+
+  .projects-cnt h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive Design for 768px */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .projects-cnt h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsive Design for 480px */
+@media (max-width: 480px) {
+  #Portfolio {
+    padding: 1rem;
+    margin-left: 10px;
+  }
+
+  .projects-cnt h3 {
+    font-size: 1.6rem;
+  }
+
+  .project-card {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .btn-link {
+    font-size: 1rem;
+  }
+}

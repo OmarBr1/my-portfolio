@@ -1,0 +1,129 @@
+#About {
+  font-family: 'Arial', sans-serif;
+  padding: 4rem 2rem;
+  background-color: #fff7e9;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-paraghraph {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Cards Section - What Am Doing & Team */
+.doing-container, .team-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.doing-title, .team-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.doing-cards, .team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Hover animation for cards */
+.card:hover {
+  transform: translateY(-15px) scale(1.05); /* Slight upward and scaling effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smoother transition */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .doing-cards, .team-cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-paraghraph {
+    padding: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+}
