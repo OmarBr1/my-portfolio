@@ -1,4 +1,4 @@
-/* Portfolio Container */
+
 #Portfolio {
   padding: 2rem;
   font-family: Arial, sans-serif;
@@ -100,7 +100,7 @@
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  background-color: #50403d; /* Slightly darken the background on hover */
+  background-color: #50403d; 
 }
 
 /* Fade-in Animation */
@@ -115,26 +115,26 @@
   }
 }
 
-/* Responsive Design */
+/* Responsive Designs */
+
 /* Responsive Design for 1024px to 1440px (Large Laptops and Desktops) */
 @media (min-width: 1024px) and (max-width: 1440px) {
   /* Card Styles */
   .project-card {
-    width: 85%; /* Adjust width for large screens, allowing 2 cards per row */
-    margin-bottom: 2rem; /* Add space between cards */
+    width: 85%; 
+    margin-bottom: 2rem; 
   }
-
   /* Section Title */
   .projects-cnt h3 {
-    font-size: 2.2rem; /* Slightly smaller for large screens */
-    margin-bottom: 3rem; /* More space below title */
+    font-size: 2.2rem;
+    margin-bottom: 3rem; 
   }
 
   /* Row Style */
   .row {
     display: flex;
     justify-content: space-between;
-    gap: 2rem; /* Keep gap consistent */
+    gap: 2rem; 
     flex-wrap: wrap;
   }
 }
@@ -142,16 +142,15 @@
 @media (min-width: 1440px)  {
   /* Card Styles */
   .project-card {
-    width: 45%; /* Two cards per row, with a small gap */
-    margin-bottom: 2rem; /* Add space between cards */
+    width: 45%; 
+    margin-bottom: 2rem; 
   }
 
   /* Section Title */
   .projects-cnt h3 {
-    font-size: 2.2rem; /* Slightly smaller for medium-large screens */
-    margin-bottom: 3rem; /* More space below title */
+    font-size: 2.2rem; 
+    margin-bottom: 3rem; 
   }
-
   /* Row Style */
   .row {
     display: flex;
@@ -165,21 +164,21 @@
 @media (min-width: 1024px) and (max-width: 1308px) {
   /* Card Styles */
   .project-card {
-    width: 95%; /* Two cards per row, with a small gap */
-    margin-bottom: 2rem; /* Add space between cards */
+    width: 95%; 
+    margin-bottom: 2rem; 
   }
 
   /* Section Title */
   .projects-cnt h3 {
-    font-size: 2.2rem; /* Slightly smaller for medium-large screens */
-    margin-bottom: 3rem; /* More space below title */
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
   }
 
   /* Row Style */
   .row {
     display: flex;
     justify-content: space-between;
-    gap: 2rem; /* Space between the cards */
+    gap: 2rem; 
     flex-wrap: wrap;
   }
 }

@@ -103,14 +103,14 @@ textarea.input-description::placeholder {
 
 /* Adjust the label for textarea to appear inside, aligned with placeholder */
 .textarea-container .input-label {
-  top: 0; /* Position it at the top of the textarea */
-  font-size: 1rem; /* Same font size as the placeholder */
+  top: 0; 
+  font-size: 1rem; 
   color: #aaa;
 }
 
 /* Adjust placeholder text inside textarea */
 textarea::placeholder {
-  color: #aaa; /* Set placeholder color */
+  color: #aaa; 
 }
 
 /* Submit button styles */
@@ -129,13 +129,13 @@ textarea::placeholder {
 /* Hover effect for submit button */
 .submit-btn:hover {
   background-color: #3f51b5;
-  transform: scale(1.05); /* Slight scale effect on hover */
+  transform: scale(1.05); 
 }
 
 /* Footer Styles */
 .footer {
   background-color: #f5f5f5;  /* Light background color to match contact section */
-  color: #333;  /* Dark text color for better readability */
+  color: #333; 
   text-align: center;
   padding: 20px;
   width: 100%;
@@ -161,61 +161,60 @@ textarea::placeholder {
 
 /* Footer links (icons) styles */
 .footer-links a {
-  color: #333;  /* Dark color for icons */
+  color: #333; 
   font-size: 1.5rem;
-  opacity: 0.6;  /* Reduced opacity for a subtle look */
-  transition: all 0.3s ease, transform 0.3s ease;  /* Smooth transition for color and transform */
+  opacity: 0.6;  
+  transition: all 0.3s ease, transform 0.3s ease;  /
 }
 
-/* Individual link color and hover effects */
 .footer-links a.github {
-  color: #1a2e14;  /* GitHub color */
+  color: #1a2e14;  
 }
 
 .footer-links a.github:hover {
-  color: #6cc644;  /* GitHub hover color */
-  opacity: 1;  /* Full opacity on hover */
-  transform: scaleX(1.2);  /* Horizontal scaling effect */
+  color: #6cc644;  
+  opacity: 1; 
+  transform: scaleX(1.2);  
 }
 
 .footer-links a.email {
-  color: #d44638;  /* Email color */
+  color: #d44638;  
 }
 
 .footer-links a.email:hover {
-  color: #ff6600;  /* Email hover color */
-  opacity: 1;  /* Full opacity on hover */
-  transform: scaleX(1.2);  /* Horizontal scaling effect */
+  color: #ff6600;  
+  opacity: 1;  
+  transform: scaleX(1.2);  
 }
 
 .footer-links a.facebook {
-  color: #3b5998;  /* Facebook color */
+  color: #3b5998;  
 }
 
 .footer-links a.facebook:hover {
-  color: #8b9dc3;  /* Facebook hover color */
-  opacity: 1;  /* Full opacity on hover */
-  transform: scaleX(1.2);  /* Horizontal scaling effect */
+  color: #8b9dc3;  
+  opacity: 1;  
+  transform: scaleX(1.2); 
 }
 
 .footer-links a.linkedin {
-  color: #0077b5;  /* LinkedIn color */
+  color: #0077b5;  
 }
 
 .footer-links a.linkedin:hover {
-  color: #00a0dc;  /* LinkedIn hover color */
-  opacity: 1;  /* Full opacity on hover */
-  transform: scaleX(1.2);  /* Horizontal scaling effect */
+  color: #00a0dc;  
+  opacity: 1;  
+  transform: scaleX(1.2); 
 }
 
 .footer-links a.instagram {
-  color: #e1306c;  /* Instagram color */
+  color: #e1306c;  
 }
 
 .footer-links a.instagram:hover {
-  color: #c13584;  /* Instagram hover color */
-  opacity: 1;  /* Full opacity on hover */
-  transform: scaleX(1.2);  /* Horizontal scaling effect */
+  color: #c13584; 
+  opacity: 1;  
+  transform: scaleX(1.2);  
 }
 
 /* Responsive Styling */
